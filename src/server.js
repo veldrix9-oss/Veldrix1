@@ -33,9 +33,4 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   try {
-    showBanner();
-  } catch (e) {}
-  logger.info(`Scanner server running on port ${PORT}`);
-});
-
-export default app;
+    
