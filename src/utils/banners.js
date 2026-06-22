@@ -1,0 +1,22 @@
+cat > src/utils/banners.js << 'EOF'
+const banners = {
+    startup: `
+██████▄ ▓█████ ▄▄▄      ▓█████▄  ▒█████   ██▀███  
+██▀ ██▌ ▓█   ▀▒████▄    ▒██▀ ██▌▒██▒  ██▒▓██ ▒ ██▒
+▓██ ░▄█ ▒▒███  ▒██  ▀█▄  ░██   █▌▒██░  ██▒▓██ ░▄█ ▒
+▒██▀▀█▄  ▒▓█  ▄░██▄▄▄▄██ ░▓█▄   ▌▒██   ██░▒██▀▀█▄  
+░██▓ ▒██▒░▒████▒▓█   ▓██▒░▒████▓ ░ ████▓▒░░██▓ ▒██▒
+░ ▒▓ ░▒▓░░░ ▒░ ░▒▒   ▓▒█░ ▒▒▓  ▒ ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░
+  ░▒ ░ ▒░ ░ ░  ░ ▒   ▒▒ ░ ░ ▒  ▒   ░ ▒ ▒░   ░▒ ░ ▒░
+  ░░   ░    ░    ░   ▒    ░ ░  ░ ░ ░ ░ ▒    ░░   ░ 
+   ░        ░  ░     ░  ░   ░        ░ ░     ░     
+                         ░                         
+        🔥 VELDRIX ENTRYPOINT — SESSION SCANNER 🔥
+`,
+    loading: `[ SCANNER STATUS ] Initializing modules...\n[ 0% ] █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n[ 20% ] ██▒▒▒▒▒▒▒▒▒▒▒▒▒\n[ 40% ] ████▒▒▒▒▒▒▒▒▒▒▒\n[ 60% ] ██████▒▒▒▒▒▒▒▒▒\n[ 80% ] ████████▒▒▒▒▒▒▒\n[ 100% ] ███████████████`,
+    qrReady: `\n======================\n   QR CODE IS READY\n======================\nScan with WhatsApp to pair your session.\n`,
+    sessionSaved: `\n======================\n  SESSION SAVED ✔\n======================\nStored securely in MongoDB.\n`
+};
+
+export default banners;
+EOF
